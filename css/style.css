@@ -1,0 +1,688 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(19, 222, 66);
+}
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+
+/*------COLORES------*/
+
+.colorLetra{
+    color: whitesmoke;
+}
+
+.colorLetraDiferente{
+    color: whitesmoke;
+}
+
+body{
+    background-color: #908f89;
+    
+}
+
+.headerIndex{
+    background: url(../assets/img/header.jpg);
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    background: url(../assets/img/mainfoto.jpg);
+    background-size: cover;
+    height: 4000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.juntosFamilia{
+    background: url(../assets/img/juntosback.jpg);
+    background-size: cover;
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.juntosFamilia{
+    display: grid;
+    grid-template-rows: 0.4fr 1.2fr;
+    grid-template-areas:
+    "textoGrid textoGrid"
+    "imagen1 imagen2";
+    grid-gap: 1rem;
+
+}
+.textoGrid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    grid-area: textoGrid;
+}
+.imagen1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    grid-area: imagen1;
+}
+.imagen2{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    grid-area: imagen2;
+    
+}
+
+.imagenJuntos{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.juntosFamilia h2{
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+.misionParrafo{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 4em; 
+    text-align: center;
+    padding-top: 20px;
+    margin: 5% 10% 10% 10%;
+    
+}
+.mainPorfolio{
+    width: fit-content;
+    height: fit-content;
+}
+.mainSobremi{
+    width: 100%;
+    height:100%;
+    background-color: #908f89;
+}
+
+/*------DIMENSIONES------*/
+
+.tamanoDeLetra{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+.tamanoDeLetraL{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.tamanoLetraXl{
+    font-size: 30px;
+}
+
+p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*------TIPOGRAFIAS------*/
+
+.letraParrafo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.tipoLetra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main h1{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+main h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+nav ul li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+/*------ALINEACION------*/
+
+.alineacionCentro{
+    justify-content: center;
+    color: whitesmoke;
+}
+.alineacionTexto{
+    margin-left: 80px;
+}
+.alineacionTextoPrincipal{
+    margin-right: 80px;
+}
+
+
+.descripcionPrincipal{
+    padding: 20px;
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    font-size: larger;
+}
+h2 p{
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+section img{
+    justify-content: end;
+    align-content: center;
+    padding: 5%;
+}
+ 
+
+.img2{
+    height: 600px;
+    width: 800px;
+}
+
+h1{
+    margin: 15px;
+    padding: 15px;
+}
+h2{
+    margin: 15px;
+    padding: 15px;
+}
+
+section p{
+    margin: 20px;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    
+}
+
+.piePagina{
+    background-color: #1fb5ae46;
+}
+
+nav ul li a{
+   color: white;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.separacionTexto{
+    padding: 30px;
+}
+
+.imagenBordes{
+    border: 5px solid #1fb5ae46;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: antiquewhite;
+}
+
+.containerPorfolio{
+        height: 230vh;
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 2.4fr 1.5fr 2fr;
+        margin: 2% 2% 2% 2%;
+        align-content: center;
+        display: grid;
+        grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img5"
+        "img4 img5 img5"
+        "img6 img6 img7"
+        "img6 img6 img7"
+    ;
+        grid-gap: 1rem;
+        grid-row-gap: 1rem;
+
+    }
+    
+    .img1 {
+        grid-area: img1;
+        background-image: url(../assets/img/porfolio5.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .img2 {
+        grid-area: img2;
+        background-image: url(../assets/img/porfolio4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img3 {
+        grid-area: img3;
+        background-image: url(../assets/img/R\ \(3\).jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img4 {
+        grid-area: img4;
+        background-image: url(../assets/img/R\ \(2\).jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img5 {
+        grid-area: img5;
+        background-image: url(../assets/img/mainfoto.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img6 {
+
+        grid-area: img6;
+        background-image: url(../assets/img/header.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img7 {
+
+        grid-area: img7;
+        background-image: url(../assets/img/porfolio3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+        /* display */
+
+    #barraMobile{
+        display: none;
+    }
+    #barraTablet{
+        display: none;
+    }
+    .indexMobile{
+        display: none;
+    }
+    .indexTablet{
+        display: none;
+    }
+
+    /*----------- Porfolio Responsive ---------------*/
+
+    @media only screen and (max-width: 480px) {
+        .containerPorfolio {
+            grid-template-columns: 0.2fr;
+            grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7";
+            
+        }
+
+
+        .headerSobremi {
+                display: none;
+        }
+
+    
+        #barraMobile{
+            display: flex;
+            flex-direction: column;
+
+        }
+        #barraMobile ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content:space-around;
+            text-align: center;
+            margin: auto;
+        
+        }
+
+        #barraTablet{
+            display: none;
+        }
+        #barraTablet img{
+            display: none;
+        }
+        #barraTablet ul li{
+            display: none;
+        }
+        .containerPorfolio div{
+            background-size: cover;
+            max-width: 440px;
+
+        }
+
+
+        .bodyPorfolio{
+            background-image: url(../assets/img/baan.jpg);
+            background-repeat: no-repeat;
+        }
+
+    
+        /* body{
+            background-color: rgb(205, 222, 135);
+        } */
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .containerPorfolio {
+                grid-template-columns: 0.4fr 0.4fr;
+                grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+                grid-template-areas:
+                    "img1 img1"
+                    "img2 img2"
+                    "img3 img3"
+                    "img4 img4"
+                    "img5 img5"
+                    "img6 img6"
+                    "img7 img7";
+                
+            }
+            .containerPorfolio div {
+                display: flex;
+                flex-direction: column;
+                background-size: cover;
+
+            }
+            
+            .headerSobremi{
+                display: none;
+            }
+
+            #barraTablet{
+                display: flex;
+                flex-direction: row;
+            }
+            #barraTablet ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content:space-around;
+                text-align: center;
+                margin: auto;
+            
+            }
+
+            .bodyPorfolio{
+                background-image: url(../assets/img/baan.jpg);
+                background-repeat: no-repeat;
+            }
+        }
+
+         /*----------- Fin Porfolio Responsive ---------------*/
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+.footerCam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerNombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+.footerCopy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+.redes img{
+    width: 60px;
+}
+.footerCam img{
+    width: 250px;
+}
+
+.imagenLogo{
+
+    margin-right: auto;
+    padding: 20px;
+    width: 400px;
+
+}
+
+.sectionImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+/* --------- Sobre mi ---------- */
+
+.headerSobremi{
+    background: url(../assets/img/baan.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+.containerSobremi{
+    display: grid;
+    height: 300vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #908f89;
+    
+}
+.camaraShot{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.secuencia1{
+        display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+}
+
+.secuencia2{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+}
+
+.secuencia3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 70%;
+
+}
+
+.secuencia4{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+}
+
+.secuencia5{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+
+}
+
+.secuencia6 img{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 70%;
+
+}
+
+.textoSobre{
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* index responsive */
+
+@media only screen and (max-width: 480px) {
+   
+    .imagenLogo {
+            display: none;
+    }
+    .banner{
+        display: none;
+    }
+    .juntosFamilia{
+        display: none;
+    }
+    .headerIndex{
+        display: none;
+    }
+
+    .indexMobile{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .indexMobile ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content:space-around;
+        text-align: center;
+    
+    }
+    .imagenJuntos{
+        display: none;
+    }
+    .sectionImg{
+        display: none;
+    }
+
+    .indexTablet{
+        display: none;
+    }
+    
+    .indexTablet ul li{
+        display: none;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .indexTablet{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .indexTablet ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:space-around;
+        text-align: center;
+        color: aqua;
+    }
+    .juntosFamilia{
+        display: none;
+    }
+    .sectionImg img{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+    .headerIndex{
+        display: none;
+    }
+    .bodyIndex{
+        background-image: url(../assets/img/baan.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
+/* Fin index responsive */
