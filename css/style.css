@@ -40,7 +40,8 @@ body{
     background-attachment: fixed;
 }
 
-main{
+
+.mainIndex{
     background: url(../assets/img/mainfoto.jpg);
     background-size: cover;
     height: 4000px;
@@ -263,6 +264,8 @@ nav ul li a{
 }
 
 .containerPorfolio{
+        display: flex;
+        flex-wrap: wrap;
         height: 230vh;
         width: 95%;
         grid-template-columns: 1fr 1fr 1fr;
@@ -788,4 +791,43 @@ footer{
     .img7:hover{
         transform: translateX(-80px);
         transition: 4s;
+    }
+
+    /* Bootstrap */
+
+    
+    .formChanges{
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+        padding-top: 5%;
+        border-color: aquamarine;
+        border-style:inset;
+    }
+
+    .divContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color:rgb(8, 182, 75);
+        
+        
+        
+    }
+    .botonContacto{   
+        color:black;
+        text-transform: uppercase;
+        margin-top: 5%;
+        border-color: azure;
+        height: 35%;
+        width: 20%;
+        font-size: larger;
+        background-color: #7ee8fa;
+        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+    }
+    .botonContacto:hover{
+        transform: scale(1.5);
+        transition: 2s;
+        background-color: #e899dc;
+        background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
     }
