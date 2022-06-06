@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -29,6 +30,9 @@ nav ul li:hover{
 body{
     background-color: #908f89;
     
+}
+.indexover{
+    overflow:hidden;
 }
 
 .headerIndex{
@@ -113,10 +117,7 @@ body{
     margin: 5% 10% 10% 10%;
     
 }
-.mainPorfolio{
-    width: fit-content;
-    height: fit-content;
-}
+
 .mainSobremi{
     width: 100%;
     height:100%;
@@ -183,7 +184,9 @@ nav ul li{
 .alineacionTextoPrincipal{
     margin-right: 80px;
 }
-
+.mainPorfolio h1{
+    font-size: 5vh;
+}
 
 .descripcionPrincipal{
     padding: 20px;
@@ -267,7 +270,7 @@ nav ul li a{
         display: flex;
         flex-wrap: wrap;
         height: 230vh;
-        width: 95%;
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1.5fr 2.4fr 1.5fr 2fr;
         margin: 2% 2% 2% 2%;
@@ -378,6 +381,7 @@ nav ul li a{
         #barraMobile{
             display: flex;
             flex-direction: column;
+            height: 0vh;
 
         }
         #barraMobile ul{
@@ -386,8 +390,7 @@ nav ul li a{
             list-style: none;
             justify-content:space-around;
             text-align: center;
-            margin: auto;
-        
+
         }
 
         #barraTablet{
@@ -401,21 +404,18 @@ nav ul li a{
         }
         .containerPorfolio div{
             background-size: cover;
-            max-width: 440px;
+            max-width: 450px;
 
         }
-
-
-        .bodyPorfolio{
-            background-image: url(../assets/img/baan.jpg);
-            background-repeat: no-repeat;
+        .containerPorfolio .img1{
+            max-width: 450px;
         }
 
-    
-        /* body{
-            background-color: rgb(205, 222, 135);
-        } */
+        .containerPorfolio .img2{
+            max-width: 450px;
         }
+
+    }
 
 
         @media only screen and (max-width: 768px) {
@@ -436,6 +436,7 @@ nav ul li a{
                 display: flex;
                 flex-direction: column;
                 background-size: cover;
+                max-width: 730px;
 
             }
             
@@ -445,7 +446,8 @@ nav ul li a{
 
             #barraTablet{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+        
             }
             #barraTablet ul{
                 display: flex;
@@ -453,16 +455,14 @@ nav ul li a{
                 list-style: none;
                 justify-content:space-around;
                 text-align: center;
-                margin: auto;
-            
+                color: aqua;
             }
 
-            .bodyPorfolio{
+            #barraTablet{
                 background-image: url(../assets/img/baan.jpg);
-                background-repeat: no-repeat;
-            }
-        }
-
+                height: 25vh;
+        }   
+    }
          /*----------- Fin Porfolio Responsive ---------------*/
 
 
@@ -607,13 +607,16 @@ footer{
 /* index responsive */
 
 @media only screen and (max-width: 480px) {
-   
+    
     .imagenLogo {
             display: none;
     }
+    
     .banner{
         display: none;
     }
+
+
     .juntosFamilia{
         display: none;
     }
@@ -624,6 +627,7 @@ footer{
     .indexMobile{
         display: flex;
         flex-direction: column;
+        height: 0vh;
 
     }
     .indexMobile ul{
@@ -634,6 +638,15 @@ footer{
         text-align: center;
     
     }
+
+    .parrafoCarrete{
+        display: none;
+    }
+    .divContacto{
+        font-size: small;
+
+    }
+
     .imagenJuntos{
         display: none;
     }
@@ -651,6 +664,10 @@ footer{
 
     .img2{
         display: none;
+    }
+
+    .mainIndex{
+        height: 1500px;
     }
 
     }
@@ -676,16 +693,19 @@ footer{
     .sectionImg img{
         display: none;
     }
+
     .img2{
         display: none;
     }
     .headerIndex{
         display: none;
     }
-    .bodyIndex{
+    .indexTablet{
         background-image: url(../assets/img/baan.jpg);
-        background-repeat: no-repeat;
+        height: 25vh;
+
     }
+
 }
 
 /* Fin index responsive */
@@ -844,7 +864,7 @@ footer{
         width: 35%;
     }
     .parrafoCarrete{
-        font-size:30px;
+        font-size:2rem;
         color: whitesmoke;
         align-content: center;
         margin: auto;
