@@ -1,0 +1,773 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------COLORES------*/
+
+.colorLetra{
+    color: whitesmoke;
+}
+
+.colorLetraDiferente{
+    color: whitesmoke;
+}
+
+body{
+    background-color: #908f89;
+    
+}
+.indexover{
+    overflow:hidden;
+}
+
+.headerIndex{
+    background: url(../assets/img/header.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.mainIndex{
+    background: url(../assets/img/mainfoto.jpg);
+    background-size: cover;
+    height: 4000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.juntosFamilia{
+    background: url(../assets/img/juntosback.jpg);
+    background-size: cover;
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.juntosFamilia{
+    display: grid;
+    grid-template-rows: 0.4fr 1.2fr;
+    grid-template-areas:
+    "textoGrid textoGrid"
+    "imagen1 imagen2";
+    grid-gap: 1rem;
+
+}
+.textoGrid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    grid-area: textoGrid;
+}
+.imagen1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    grid-area: imagen1;
+}
+.imagen2{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    grid-area: imagen2;
+    
+}
+
+.imagenJuntos{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.juntosFamilia h2{
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+.misionParrafo{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 4em; 
+    text-align: center;
+    padding-top: 20px;
+    margin: 5% 10% 10% 10%;
+    
+}
+
+.mainSobremi{
+    width: 100%;
+    height:100%;
+    background-color: #908f89;
+}
+
+/*------DIMENSIONES------*/
+
+.tamanoDeLetra{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+.tamanoDeLetraL{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.tamanoLetraXl{
+    font-size: 30px;
+}
+
+p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*------TIPOGRAFIAS------*/
+
+.letraParrafo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.tipoLetra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main h1{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+main h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+/*------ALINEACION------*/
+
+.alineacionCentro{
+    justify-content: center;
+    color: whitesmoke;
+}
+.alineacionTexto{
+    margin-left: 80px;
+}
+.alineacionTextoPrincipal{
+    margin-right: 80px;
+}
+.mainPorfolio h1{
+    font-size: 5vh;
+}
+
+.descripcionPrincipal{
+    padding: 20px;
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    font-size: larger;
+}
+h2 p{
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+}
+section img{
+    justify-content: end;
+    align-content: center;
+    padding: 5%;
+}
+ 
+
+.img2{
+    height: 600px;
+    width: 800px;
+}
+
+h1{
+    margin: 15px;
+    padding: 15px;
+}
+h2{
+    margin: 15px;
+    padding: 15px;
+}
+
+section p{
+    margin: 20px;
+    padding: 20px;
+}
+
+.piePagina{
+    background-color: #1fb5ae46;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.separacionTexto{
+    padding: 30px;
+}
+
+.imagenBordes{
+    border: 5px solid #1fb5ae46;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: antiquewhite;
+}
+    
+    .img1 {
+        grid-area: img1;
+        background-image: url(../assets/img/porfolio5.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .img2 {
+        grid-area: img2;
+        background-image: url(../assets/img/porfolio4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img3 {
+        grid-area: img3;
+        background-image: url(../assets/img/R\ \(3\).jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img4 {
+        grid-area: img4;
+        background-image: url(../assets/img/R\ \(2\).jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img5 {
+        grid-area: img5;
+        background-image: url(../assets/img/mainfoto.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img6 {
+
+        grid-area: img6;
+        background-image: url(../assets/img/header.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img7 {
+
+        grid-area: img7;
+        background-image: url(../assets/img/porfolio3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+        /* display */
+
+    #barraMobile{
+        display: none;
+    }
+    #barraTablet{
+        display: none;
+    }
+    .indexMobile{
+        display: none;
+    }
+    .indexTablet{
+        display: none;
+    }
+
+    /*----------- Porfolio Responsive ---------------*/
+
+    @media only screen and (max-width: 480px) {
+        .containerPorfolio {
+            grid-template-columns: 0.2fr;
+            grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7";
+            
+        }
+
+
+        .headerSobremi {
+                display: none;
+        }
+
+    
+        #barraMobile{
+            display: flex;
+            flex-direction: column;
+            height: 0vh;
+
+        }
+        #barraMobile ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content:space-around;
+            text-align: center;
+
+        }
+
+        #barraTablet{
+            display: none;
+        }
+        #barraTablet img{
+            display: none;
+        }
+        #barraTablet ul li{
+            display: none;
+        }
+        .containerPorfolio div{
+            background-size: cover;
+            max-width: 450px;
+
+        }
+        .containerPorfolio .img1{
+            max-width: 450px;
+        }
+
+        .containerPorfolio .img2{
+            max-width: 450px;
+        }
+
+    }
+
+
+        @media only screen and (max-width: 768px) {
+            .containerPorfolio {
+                grid-template-columns: 0.4fr 0.4fr;
+                grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+                grid-template-areas:
+                    "img1 img1"
+                    "img2 img2"
+                    "img3 img3"
+                    "img4 img4"
+                    "img5 img5"
+                    "img6 img6"
+                    "img7 img7";
+                
+            }
+            .containerPorfolio div {
+                display: flex;
+                flex-direction: column;
+                background-size: cover;
+                max-width: 730px;
+
+            }
+            
+            .headerSobremi{
+                display: none;
+            }
+
+            #barraTablet{
+                display: flex;
+                flex-direction: column;
+        
+            }
+            #barraTablet ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content:space-around;
+                text-align: center;
+                color: aqua;
+            }
+
+            #barraTablet{
+                background-image: url(../assets/img/baan.jpg);
+                height: 25vh;
+        }   
+    }
+         /*----------- Fin Porfolio Responsive ---------------*/
+
+
+
+.imagenLogo{
+
+    margin-right: auto;
+    padding: 20px;
+    width: 400px;
+
+}
+
+.sectionImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+/* --------- Sobre mi ---------- */
+
+.headerSobremi{
+    background: url(../assets/img/baan.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+.containerSobremi{
+    display: grid;
+    height: 300vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #908f89;
+    
+}
+.camaraShot{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.secuencia1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+}
+
+.secuencia2{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+}
+
+.secuencia3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 70%;
+
+}
+
+.secuencia4{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+}
+
+.secuencia5{
+    margin-bottom: auto;
+    padding: 10% 10% 10% 10%;
+
+}
+
+.secuencia6 img{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 70%;
+
+}
+
+.textoSobre{
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* index responsive */
+
+@media only screen and (max-width: 480px) {
+    
+    .imagenLogo {
+            display: none;
+    }
+    
+    .banner{
+        display: none;
+    }
+
+
+    .juntosFamilia{
+        display: none;
+    }
+    .headerIndex{
+        display: none;
+    }
+
+    .indexMobile{
+        display: flex;
+        flex-direction: column;
+        height: 0vh;
+
+    }
+    .indexMobile ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content:space-around;
+        text-align: center;
+    
+    }
+
+    .parrafoCarrete{
+        display: none;
+    }
+    .divContacto{
+        font-size: small;
+
+    }
+
+    .imagenJuntos{
+        display: none;
+    }
+    .sectionImg{
+        display: none;
+    }
+
+    .indexTablet{
+        display: none;
+    }
+    
+    .indexTablet ul li{
+        display: none;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    .mainIndex{
+        height: 1500px;
+    }
+
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .indexTablet{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .indexTablet ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:space-around;
+        text-align: center;
+        color: aqua;
+    }
+    .juntosFamilia{
+        display: none;
+    }
+    .sectionImg img{
+        display: none;
+    }
+
+    .img2{
+        display: none;
+    }
+    .headerIndex{
+        display: none;
+    }
+    .indexTablet{
+        background-image: url(../assets/img/baan.jpg);
+        height: 25vh;
+
+    }
+
+}
+
+/* Fin index responsive */
+
+/* transiciones index */
+.imagen1:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+
+}
+.imagen2:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+
+}
+.misionTransform:hover{
+    transform: scale(1.2);
+    transition: 3s;
+}
+/* Fin transiciones index */
+
+/* Transformaciones Porfolio */
+.img1:hover{
+    transform: rotate(20deg) translateX(20px);
+    transition: all 2s;
+}
+.img2:hover{
+    animation: anim 4s;
+}
+@keyframes anim{
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+.img3:hover{
+    transform: scale(1.2);
+    transition: 3s;
+}
+.img4:hover{
+    transform: rotate(10deg) scale(0.9);
+    transition: 3s;
+    border-radius: 5%;
+}
+.img5:hover{
+    animation: anim5 5s;
+}
+    @keyframes anim5{
+
+        
+    
+        15% {
+            transform: scale(0.8) rotate(50deg);
+            
+        }
+    
+        30% {
+            transform: scale(0.6) rotate(100deg);
+        }
+    
+        45% {
+            transform: scale(0.5) rotate(150deg);
+        }
+    
+        60% {
+            transform: scale(0.4) rotate(200deg);
+        }
+    
+        75% {
+            transform: scale(0.3) rotate(250deg);
+        }
+
+        100% {
+            transform: scale(0.2) rotate(300deg);
+        }
+    }
+    .img6:hover{
+        transform: translateY(-80px);
+        transition: 4s;
+    }
+    .img7:hover{
+        transform: translateX(-80px);
+        transition: 4s;
+    }
+
+    /* Bootstrap */
+
+    
+    .formChanges{
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+        padding-top: 5%;
+        border-color: aquamarine;
+        border-style:inset;
+    }
+
+    .divContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color:rgb(8, 182, 75);
+        
+        
+        
+    }
+    .botonContacto{   
+        color:black;
+        text-transform: uppercase;
+        margin-top: 5%;
+        border-color: azure;
+        height: 35%;
+        width: 20%;
+        font-size: larger;
+        background-color: #7ee8fa;
+        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+    }
+    .botonContacto:hover{
+        transform: scale(1.5);
+        transition: 2s;
+        background-color: #e899dc;
+        background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+    }
+
+    .carrete{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 5%;
+    }
+    .carrete img{
+        margin: 0 auto;
+        height: 35%;
+        width: 35%;
+    }
+    .parrafoCarrete{
+        font-size:2rem;
+        color: whitesmoke;
+        align-content: center;
+        margin: auto;
+    }

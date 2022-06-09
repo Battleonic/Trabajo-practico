@@ -1,0 +1,6 @@
+$color-principal: blue;
+$color-secundario: pink;
+
+.button{
+    border: 1px solid darken($color-principal , $amount: 20%);
+}
