@@ -1,0 +1,11 @@
+@mixin footerMix{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin dispflexycentrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

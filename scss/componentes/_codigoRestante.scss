@@ -19,17 +19,12 @@ body{
     background-color: #908f89;
     
 }
-.indexover{
-    overflow:hidden;
-}
 
 .headerIndex{
     background: url(../assets/img/header.jpg);
     background-size: cover;
     height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+   @extend %back2;
 }
 
 
@@ -37,17 +32,13 @@ body{
     background: url(../assets/img/mainfoto.jpg);
     background-size: cover;
     height: 4000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @extend %back2;
 }
 .juntosFamilia{
     background: url(../assets/img/juntosback.jpg);
     background-size: cover;
     height: 150vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @extend %back2;
 }
 
 
@@ -61,30 +52,26 @@ body{
 
 }
 .textoGrid{
-    display: flex;
-    flex-direction: row;
+    @extend %disflexrow;
     align-items: center;
     justify-content: space-around;
     color: whitesmoke;
     grid-area: textoGrid;
 }
 .imagen1{
-    display: flex;
-    flex-direction: row;
+    @extend %disflexrow;
     margin: auto;
     grid-area: imagen1;
 }
 .imagen2{
-    display: flex;
-    flex-direction: row;
+    @extend %disflexrow;
     margin: auto;
     grid-area: imagen2;
     
 }
 
 .imagenJuntos{
-    display: flex;
-    flex-direction: row;
+    @extend %disflexrow;
     margin: auto;
 }
 
@@ -95,8 +82,8 @@ body{
 }
 
 .misionParrafo{
-    color: whitesmoke;
-    font-size: 30px;
+    color: map-get($color, color1);
+    font-size: map-get($font, font2);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 0.1em;
     line-height: 4em; 
@@ -214,8 +201,7 @@ section p{
 }
 
 .banner{
-    display: flex;
-    flex-direction: row;
+    @extend %disflexrow;
     justify-content: center;
 
 }
@@ -230,57 +216,6 @@ section p{
     background-color: antiquewhite;
 }
     
-    .img1 {
-        grid-area: img1;
-        background-image: url(../assets/img/porfolio5.jpg);
-        background-position: center;
-        background-size: cover;
-    
-    }
-    
-    .img2 {
-        grid-area: img2;
-        background-image: url(../assets/img/porfolio4.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .img3 {
-        grid-area: img3;
-        background-image: url(../assets/img/R\ \(3\).jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .img4 {
-        grid-area: img4;
-        background-image: url(../assets/img/R\ \(2\).jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .img5 {
-        grid-area: img5;
-        background-image: url(../assets/img/mainfoto.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .img6 {
-
-        grid-area: img6;
-        background-image: url(../assets/img/header.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .img7 {
-
-        grid-area: img7;
-        background-image: url(../assets/img/porfolio3.jpg);
-        background-position: center;
-        background-size: cover;
-    }
 
         /* display */
 
@@ -332,6 +267,11 @@ section p{
             list-style: none;
             justify-content:space-around;
             text-align: center;
+        }
+
+        #barraMobile ul li a{
+            color: blanchedalmond;
+            font-size: medium;
 
         }
 
@@ -400,6 +340,12 @@ section p{
                 color: aqua;
             }
 
+            #barraTablet ul li a{
+                color: burlywood;
+                font-size: larger;
+    
+            }
+
             #barraTablet{
                 background-image: url(../assets/img/baan.jpg);
                 height: 25vh;
@@ -447,16 +393,14 @@ section p{
     
 }
 .camaraShot{
-    display: flex;
-    flex-direction: column;
+    @extend %disflexcol;
     margin: auto;
     align-items: center;
     width: 60%;
     height: 100%;
 }
 .secuencia1{
-    display: flex;
-    flex-direction: column;
+    @extend %disflexcol;
     margin: auto;
     align-items: center;
     width: 40%;
@@ -469,8 +413,7 @@ section p{
 }
 
 .secuencia3{
-    display: flex;
-    flex-direction: column;
+    @extend %disflexcol;
     align-items: center;
     margin: auto;
     width: 50%;
@@ -490,9 +433,8 @@ section p{
 }
 
 .secuencia6 img{
-    display: flex;
+    @extend %disflexcol;
     flex-direction: row;
-    flex-direction: column;
     align-items: center;
     margin: auto;
     width: 50%;
@@ -541,6 +483,11 @@ section p{
     
     }
 
+    .indexMobile ul li a{
+        color: blanchedalmond;
+        font-weight: 500;
+    }
+
     .parrafoCarrete{
         display: none;
     }
@@ -579,6 +526,10 @@ section p{
     .indexTablet{
         display: flex;
         flex-direction: column;
+    }
+        .indexTablet ul li a{
+            color: burlywood;
+            font-size: larger;
 
     }
     .indexTablet ul{
@@ -755,8 +706,7 @@ section p{
     }
 
     .carrete{
-        display: flex;
-        flex-direction: row;
+        @extend %disflexrow;
         flex-wrap: nowrap;
         margin-top: 5%;
     }

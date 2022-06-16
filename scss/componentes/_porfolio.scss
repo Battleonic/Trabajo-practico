@@ -105,23 +105,65 @@ footer {
 }
   
 
+.img1 {
+  grid-area: img1;
+  background-image: url(../assets/img/porfolio5.jpg);
+  @extend %back;
+
+}
+
+.img2 {
+  grid-area: img2;
+  background-image: url(../assets/img/porfolio4.jpg);
+  @extend %back;
+}
+
+.img3 {
+  grid-area: img3;
+  background-image: url(../assets/img/R\ \(3\).jpg);
+  background-position: center;
+  @extend %back;
+}
+
+.img4 {
+  grid-area: img4;
+  background-image: url(../assets/img/R\ \(2\).jpg);
+  @extend %back;
+}
+
+.img5 {
+  grid-area: img5;
+  background-image: url(../assets/img/mainfoto.jpg);
+  @extend %back;
+}
+
+.img6 {
+
+  grid-area: img6;
+  background-image: url(../assets/img/header.jpg);
+  @extend %back;
+}
+
+.img7 {
+
+  grid-area: img7;
+  background-image: url(../assets/img/porfolio3.jpg);
+  @extend %back;
+}
+
+
+
       footer {
           .footerCam {
-            display: $disf;
-            justify-content: $centrar;
-            align-items: $centrar;
+            @include dispflexycentrar;
 
 
           .footerNombre {
-            display: $disf;
-            justify-content: $centrar;
-            align-items: $centrar;
+            @include dispflexycentrar;
             color: azure;
 
           .footerCopy{
-           display: $disf;
-           justify-content: $centrar;
-           align-items: $centrar;
+            @include dispflexycentrar;
            color: azure;
          }
        }
@@ -130,10 +172,9 @@ footer {
   
 
     .redes{
-      display: $disf;
-      align-items: $centrar;
-      justify-content: space-evenly;
+      @include footerMix;
     }
+
 
 .redes img{
     width: 60px;

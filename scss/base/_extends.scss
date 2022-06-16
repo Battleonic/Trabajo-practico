@@ -1,0 +1,18 @@
+%back{
+    background-position: center;
+    background-size: cover;
+}
+%back2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+%disflexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+%disflexcol{
+    display: flex;
+    flex-direction: column;
+}
