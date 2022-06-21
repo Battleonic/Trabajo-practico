@@ -86,7 +86,7 @@ body {
 
 .mainSobremi {
   width: 100%;
-  height: 100%;
+  height: 400vh;
   background-color: #908f89;
 }
 
@@ -402,11 +402,161 @@ section p {
   height: 70%;
 }
 
+.secuencia2 {
+  align-content: center;
+}
+
+.barraMobileSobremi {
+  display: none;
+}
+
+.barraTabletSobremi {
+  display: none;
+}
+
+/*----------- Sobre mi Responsive ---------------*/
+@media only screen and (max-width: 480px) {
+  .containerSobremi {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 22rem;
+    height: 100vh;
+  }
+
+  .barraMobileSobremi {
+    display: flex;
+    flex-direction: column;
+    height: 0vh;
+  }
+
+  .barraMobileSobremi ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .barraMobileSobremi ul li a {
+    color: blanchedalmond;
+    font-size: medium;
+  }
+
+  .secuencia6 {
+    display: none;
+  }
+
+  .secuencia3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .secuencia1 {
+    width: 80%;
+    height: 80%;
+    padding-top: 20%;
+  }
+
+  .barraTabletSobremi ul li {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .containerSobremi {
+    grid-template-columns: none;
+  }
+
+  .secuencia6 {
+    display: none;
+  }
+
+  .barraTabletSobremi {
+    display: flex;
+  }
+
+  .barraTabletSobremi ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    color: aqua;
+  }
+
+  .barraTabletSobremi ul li a {
+    color: burlywood;
+    font-size: larger;
+  }
+
+  .barraTabletSobremi {
+    background-image: url(../assets/img/baan.jpg);
+    height: 25vh;
+  }
+}
+/*----------- Fin Sobre mi Responsive ---------------*/
 .textoSobre {
   color: whitesmoke;
   text-align: center;
 }
 
+.barraMobileContacto {
+  display: none;
+}
+
+.barraTabletContacto {
+  display: none;
+}
+
+/* ------- Contacto responsive -------- */
+@media only screen and (max-width: 480px) {
+  .barraMobileContacto {
+    display: flex;
+    flex-direction: column;
+    height: 0vh;
+  }
+
+  .barraMobileContacto ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .barraMobileContacto ul li a {
+    color: blanchedalmond;
+    font-size: medium;
+  }
+
+  .barraTabletContacto ul li {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .barraTabletContacto {
+    display: flex;
+  }
+
+  .barraTabletContacto ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    color: aqua;
+  }
+
+  .barraTabletContacto ul li a {
+    color: burlywood;
+    font-size: larger;
+  }
+
+  .barraTabletContacto {
+    background-image: url(../assets/img/baan.jpg);
+    height: 25vh;
+  }
+}
+/* Fin Contacto responsive */
 /* index responsive */
 @media only screen and (max-width: 480px) {
   .imagenLogo {
@@ -611,13 +761,25 @@ section p {
   transition: 4s;
 }
 
-/* Bootstrap */
 .formChanges {
   padding-bottom: 10%;
   margin-bottom: 10%;
   padding-top: 5%;
   border-color: aquamarine;
-  border-style: inset;
+  border-style: solid;
+}
+
+.cambiosContacto {
+  width: 80%;
+  border: 2px solid;
+}
+
+.letraContacto {
+  padding: 10px;
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: whitesmoke;
+  font-size: large;
 }
 
 .divContacto {
