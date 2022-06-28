@@ -19,22 +19,30 @@ body{
     background-color: #908f89;
     
 }
+.headerPorfolio{
+    background: url(../img/baan.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
 
 .headerIndex{
-    background: url(../assets/img/header.jpg);
+    background: url(../img/header.jpg);
     background-size: cover;
     height: 700px;
    @extend %back2;
 }
 
 .mainIndex{
-    background: url(../assets/img/mainfoto.jpg);
+    background: url(../img/mainfoto.jpg);
     background-size: cover;
     height: 4000px;
     @extend %back2;
 }
 .juntosFamilia{
-    background: url(../assets/img/juntosback.jpg);
+    background: url(../img/juntosback.jpg);
     background-size: cover;
     height: 150vh;
     @extend %back2;
@@ -93,7 +101,7 @@ body{
 
 .mainSobremi{
     width: 100%;
-    height: 400vh;
+    height: 490vh;
     background-color: #908f89;
 }
 
@@ -181,10 +189,6 @@ section{
  }
 } 
 
-.img2{
-    height: 600px;
-    width: 800px;
-}
 
 h1{
     margin: 15px;
@@ -206,7 +210,24 @@ section{
     background-color: #1fb5ae46;
 }
 
-.banner{
+.bannerPorfolio{
+    @extend %disflexrow;
+    justify-content: center;
+
+}
+
+.bannerIndex{
+    @extend %disflexrow;
+    justify-content: center;
+
+}
+
+.bannerSobremi{
+    @extend %disflexrow;
+    justify-content: center;
+
+}
+.bannerContacto{
     @extend %disflexrow;
     justify-content: center;
 
@@ -221,130 +242,37 @@ section{
     padding: 30px;
     background-color: antiquewhite;
 }
-    
-        /* display */
-
-    #barraMobile{
-        display: none;
-    }
-    #barraTablet{
-        display: none;
-    }
-    .indexMobile{
-        display: none;
-    }
-    .indexTablet{
-        display: none;
-    }
 
     /*----------- Porfolio Responsive ---------------*/
 
     @media only screen and (max-width: 480px) {
-        .containerPorfolio {
-            grid-template-columns: 0.2fr;
-            grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-            grid-template-areas:
-                "img1"
-                "img2"
-                "img3"
-                "img4"
-                "img5"
-                "img6"
-                "img7";
-            
-        }
 
-        .headerSobremi {
-                display: none;
-        }
-
-        #barraMobile{
-            display: flex;
-            flex-direction: column;
-            height: 0vh;
-
-        }
-        #barraMobile {
-            ul{
+       
+        .navPorfolio ul{
             display: flex;
             flex-direction: column;
             list-style: none;
             justify-content:space-around;
             text-align: center;
         }
-    }
-
-        #barraMobile{
-
-            ul{
-                li{
-                    a{
-                    color: blanchedalmond;
-                    font-size: medium;
-
-            }
-        }
-    }
-}
-
-        #barraTablet{
-            display: none;
-        }
-        #barraTablet img{
-            display: none;
-        }
-        #barraTablet ul li{
-            display: none;
-        }
-        .containerPorfolio{
-                     div{
-                    background-size: cover;
-                    max-width: 450px;
-
-        }
-    }
-        .containerPorfolio .img1{
-            max-width: 450px;
-        }
-
-        .containerPorfolio .img2{
-            max-width: 450px;
+        
+        .navPorfolio ul li a{
+            color: blanchedalmond;
+            font-size: medium;
         }
 
     }
 
         @media only screen and (max-width: 768px) {
-            .containerPorfolio {
-                grid-template-columns: 0.4fr 0.4fr;
-                grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-                grid-template-areas:
-                    "img1 img1"
-                    "img2 img2"
-                    "img3 img3"
-                    "img4 img4"
-                    "img5 img5"
-                    "img6 img6"
-                    "img7 img7";
-                
-            }
-            .containerPorfolio div {
-                display: flex;
-                flex-direction: column;
-                background-size: cover;
-                max-width: 730px;
-
-            }
+         
             
-            .headerSobremi{
-                display: none;
-            }
 
-            #barraTablet{
+            #barraDesktop{
                 display: flex;
                 flex-direction: column;
         
             }
-            #barraTablet ul{
+            #barraDesktopt ul{
                 display: flex;
                 flex-direction: row;
                 list-style: none;
@@ -353,14 +281,14 @@ section{
                 color: aqua;
             }
 
-            #barraTablet ul li a{
+            #barraDesktop ul li a{
                 color: burlywood;
                 font-size: larger;
     
             }
 
-            #barraTablet{
-                background-image: url(../assets/img/baan.jpg);
+            .headerPorfolio{
+                background-image: url(../img/baan.jpg);
                 height: 25vh;
         }   
     }
@@ -384,7 +312,7 @@ section{
 /* --------- Sobre mi ---------- */
 
 .headerSobremi{
-    background: url(../assets/img/baan.jpg);
+    background: url(../img/baan.jpg);
     background-size: cover;
     height: 500px;
     background-position: center;
@@ -457,12 +385,7 @@ section{
 .secuencia2{
     align-content: center;
 }
-.barraMobileSobremi{
-    display: none;
-}
-.barraTabletSobremi{
-    display: none;
-}
+
  /*----------- Sobre mi Responsive ---------------*/
 @media only screen and (max-width: 480px) {
     .containerSobremi {
@@ -472,32 +395,7 @@ section{
         height:100vh;
 
     }
-    .barraMobileSobremi{
-        display: flex;
-        flex-direction: column;
-        height: 0vh;
-    }
-    .barraMobileSobremi ul{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        justify-content:space-around;
-        text-align: center;
-    }
-
-    .barraMobileSobremi{
-            ul{ 
-                li{
-                    a{
-            color: blanchedalmond;
-            font-size: medium;
-                    }
-                }
-            }
-        }
-    
-    
-    
+ 
     .secuencia6{
         display: none;
     }
@@ -510,9 +408,20 @@ section{
         height: 80%;
         padding-top: 20%;
     }
-    .barraTabletSobremi ul li{
-        display: none;
+
+    .navSobremi ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content:space-around;
+        text-align: center;
     }
+    
+    .navSobremi ul li a{
+        color: blanchedalmond;
+        font-size: medium;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -524,29 +433,24 @@ section{
         display: none;
     }
 
-    .barraTabletSobremi{
+    .navSobremi{
         display: flex;
 
     }
-    .barraTabletSobremi ul{
+    .navSobremi ul{
         display: flex;
-        flex-direction: row;
         list-style: none;
         justify-content:space-around;
         text-align: center;
         color: aqua;
     }
 
-    .barraTabletSobremi ul li a{
+    .navSobremi ul li a{
         color: burlywood;
         font-size: larger;
 
     }
 
-    .barraTabletSobremi{
-        background-image: url(../assets/img/baan.jpg);
-        height: 25vh;
-}   
 
 }
  /*----------- Fin Sobre mi Responsive ---------------*/
@@ -554,21 +458,13 @@ section{
     color: whitesmoke;
     text-align: center;
 }
-.barraMobileContacto{
-    display: none;
-}
-.barraTabletContacto{
-    display: none;
-}
+
 /* ------- Contacto responsive -------- */
 
 @media only screen and (max-width: 480px) {
-.barraMobileContacto{
-    display: flex;
-    flex-direction: column;
-    height: 0vh;
-}
-.barraMobileContacto ul{
+
+
+.navContacto ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -576,40 +472,35 @@ section{
     text-align: center;
 }
 
-.barraMobileContacto ul li a{
+.navContacto ul li a{
     color: blanchedalmond;
     font-size: medium;
 }
-.barraTabletContacto ul li{
-    display: none;
-}
-
 }
 @media only screen and (max-width: 768px) {
 
-    .barraTabletContacto{
+    .navContacto{
         display: flex;
 
     }
-    .barraTabletContacto ul{
+    .navContacto ul{
         display: flex;
-        flex-direction: row;
         list-style: none;
         justify-content:space-around;
         text-align: center;
         color: aqua;
     }
 
-    .barraTabletContacto ul li a{
+    .navContacto ul li a{
         color: burlywood;
         font-size: larger;
 
     }
+    .imagenLogo{
+        display: none;
+    }
 
-    .barraTabletContacto{
-        background-image: url(../assets/img/baan.jpg);
-        height: 25vh;
-}   
+
 
 }
 /* Fin Contacto responsive */
@@ -617,40 +508,29 @@ section{
 /* index responsive */
 
 @media only screen and (max-width: 480px) {
+
     
     .imagenLogo {
             display: none;
     }
     
-    .banner{
-        display: none;
-    }
 
     .juntosFamilia{
         display: none;
     }
-    .headerIndex{
-        display: none;
-    }
+    
 
-    .indexMobile{
-        display: flex;
-        flex-direction: column;
-        height: 0vh;
-
-    }
-    .indexMobile ul{
+    .navIndex ul{
         display: flex;
         flex-direction: column;
         list-style: none;
         justify-content:space-around;
         text-align: center;
-    
     }
-
-    .indexMobile ul li a{
+    
+    .navIndex ul li a{
         color: blanchedalmond;
-        font-weight: 500;
+        font-size: medium;
     }
 
     .parrafoCarrete{
@@ -668,13 +548,6 @@ section{
         display: none;
     }
 
-    .indexTablet{
-        display: none;
-    }
-    
-    .indexTablet ul li{
-        display: none;
-    }
 
     .img2{
         display: none;
@@ -688,23 +561,24 @@ section{
 
 @media only screen and (max-width: 768px) {
 
-    .indexTablet{
+    .navIndex{
         display: flex;
-        flex-direction: column;
-    }
-        .indexTablet ul li a{
-            color: burlywood;
-            font-size: larger;
 
     }
-    .indexTablet ul{
+    .navIndex ul{
         display: flex;
-        flex-direction: row;
         list-style: none;
         justify-content:space-around;
         text-align: center;
         color: aqua;
     }
+
+    .navIndex ul li a{
+        color: burlywood;
+        font-size: larger;
+
+    }
+   
     .juntosFamilia{
         display: none;
     }
@@ -715,14 +589,7 @@ section{
     .img2{
         display: none;
     }
-    .headerIndex{
-        display: none;
-    }
-    .indexTablet{
-        background-image: url(../assets/img/baan.jpg);
-        height: 25vh;
-
-    }
+    
 
 }
 
@@ -745,89 +612,10 @@ section{
 }
 /* Fin transiciones index */
 
-/* Transformaciones Porfolio */
-.img1:hover{
-    transform: rotate(20deg) translateX(20px);
-    transition: all 2s;
-}
-.img2:hover{
-    animation: anim 4s;
-}
-@keyframes anim{
-
-    0%,
-    100% {
-        transform: translateX(0%);
-        transform-origin: 50% 50%;
-    }
-
-    15% {
-        transform: translateX(-30px) rotate(-6deg);
-    }
-
-    30% {
-        transform: translateX(15px) rotate(6deg);
-    }
-
-    45% {
-        transform: translateX(-15px) rotate(-3.6deg);
-    }
-
-    60% {
-        transform: translateX(9px) rotate(2.4deg);
-    }
-
-    75% {
-        transform: translateX(-6px) rotate(-1.2deg);
-    }
-}
-.img3:hover{
+.box-img:hover{
     transform: scale(1.2);
     transition: 3s;
 }
-.img4:hover{
-    transform: rotate(10deg) scale(0.9);
-    transition: 3s;
-    border-radius: 5%;
-}
-.img5:hover{
-    animation: anim5 5s;
-}
-    @keyframes anim5{
-
-        15% {
-            transform: scale(0.8) rotate(50deg);
-            
-        }
-    
-        30% {
-            transform: scale(0.6) rotate(100deg);
-        }
-    
-        45% {
-            transform: scale(0.5) rotate(150deg);
-        }
-    
-        60% {
-            transform: scale(0.4) rotate(200deg);
-        }
-    
-        75% {
-            transform: scale(0.3) rotate(250deg);
-        }
-
-        100% {
-            transform: scale(0.2) rotate(300deg);
-        }
-    }
-    .img6:hover{
-        transform: translateY(-80px);
-        transition: 4s;
-    }
-    .img7:hover{
-        transform: translateX(-80px);
-        transition: 4s;
-    }
 
     .formChanges{
         padding-bottom: 10%;

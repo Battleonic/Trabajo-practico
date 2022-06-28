@@ -1,16 +1,4 @@
-.headerSobremi{
-    background: url(../assets/img/baan.jpg);
-    background-size: cover;
-    height: $ancho500;
-    background-position: $centrar;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    .banner {
-        display: $disf;
-        flex-direction: row;
-        justify-content: $centrar;
-      }
-    }
+
 
       nav{
         ul{
@@ -51,31 +39,52 @@
   }
 }
     
-.mainPorfolio{
-      .tamanoLetraXl {
-        font-size: nth($size , 4);
-      
-      .tipoLetra {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      }
-    }
+    .container-img{
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 250px;
+      grid-gap: 20px;
   }
-  .mainPorfolio{
-      .containerPorfolio {
-        display: $disf;
-        flex-wrap: wrap;
-        height: 230vh;
-        // width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.5fr 2.4fr 1.5fr 2fr;
-        // margin: 2% 2% 2% 2%;
-        align-content: center;
-        display: grid;
-        grid-template-areas: "img1 img2 img3" "img4 img5 img5" "img4 img5 img5" "img6 img6 img7" "img6 img6 img7";
-        grid-gap: nth($size , 10);
-        grid-row-gap: nth($size , 10);
-     }
-    }
+  .container-img .box-img figure{
+      width: 100%;
+      height: 100%;
+  }
+  .container-img .box-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .container-img .box-img:nth-child(1){
+      grid-column-start: span 2;
+  }
+  .container-img .box-img:nth-child(4){
+      grid-row-start: span 2;
+  }
+  @media screen and (max-width:768px){
+      .container-img{
+          width: 95%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+          grid-template-rows: 200px;
+      }
+      .container-img .box-img:nth-child(1){
+          grid-column-start: span 1;
+      }
+  }
+  @media screen and (max-width:480px){
+      .container-img{
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .container-img .box-img img{
+          height: 200px;
+      }
+  }
 
 
 footer {
@@ -104,53 +113,6 @@ footer {
   }
 }
   
-
-.img1 {
-  grid-area: img1;
-  background-image: url(../assets/img/porfolio5.jpg);
-  @extend %back;
-
-}
-
-.img2 {
-  grid-area: img2;
-  background-image: url(../assets/img/porfolio4.jpg);
-  @extend %back;
-}
-
-.img3 {
-  grid-area: img3;
-  background-image: url(../assets/img/R\ \(3\).jpg);
-  background-position: center;
-  @extend %back;
-}
-
-.img4 {
-  grid-area: img4;
-  background-image: url(../assets/img/R\ \(2\).jpg);
-  @extend %back;
-}
-
-.img5 {
-  grid-area: img5;
-  background-image: url(../assets/img/mainfoto.jpg);
-  @extend %back;
-}
-
-.img6 {
-
-  grid-area: img6;
-  background-image: url(../assets/img/header.jpg);
-  @extend %back;
-}
-
-.img7 {
-
-  grid-area: img7;
-  background-image: url(../assets/img/porfolio3.jpg);
-  @extend %back;
-}
-
 
 
       footer {
